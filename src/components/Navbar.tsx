@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Instagram } from "lucide-react";
 
 export default function Navbar() {
   const navItems = [
@@ -27,12 +28,23 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <a 
-          href="https://wa.me/51914135823"
-          className="bg-accent text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-accent/80 transition-all"
-        >
-          Empezar
-        </a>
+        <div className="flex items-center gap-4">
+          <a 
+            href="https://www.instagram.com/wavestudiov1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/70 hover:text-white transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram size={20} />
+          </a>
+          <a 
+            href="https://wa.me/51914135823"
+            className="bg-accent text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-accent/80 transition-all"
+          >
+            Empezar
+          </a>
+        </div>
       </div>
     </motion.nav>
   );

@@ -10,7 +10,7 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6">
-          <a href="#" className="text-white/40 hover:text-accent transition-colors"><Instagram size={20} /></a>
+          <a href="https://www.instagram.com/wavestudiov1/" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-accent transition-colors"><Instagram size={20} /></a>
           <a href="#" className="text-white/40 hover:text-accent transition-colors"><Facebook size={20} /></a>
           <a href="#" className="text-white/40 hover:text-accent transition-colors"><Linkedin size={20} /></a>
           <a href="#" className="text-white/40 hover:text-accent transition-colors"><Twitter size={20} /></a>

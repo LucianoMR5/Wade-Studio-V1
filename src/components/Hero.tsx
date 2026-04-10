@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, Instagram } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -29,21 +29,33 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col items-center gap-6"
         >
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+            <a 
+              href="#pricing"
+              className="w-full sm:w-auto px-8 py-4 bg-white text-primary font-bold rounded-full flex items-center justify-center gap-2 hover:bg-accent hover:text-white transition-all group"
+            >
+              Ver planes
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a 
+              href="https://wa.me/51914135823?text=Hola%20buenas,%20queria%20mas%20informacion%20sobre%20las%20paginas%20web"
+              className="w-full sm:w-auto px-8 py-4 glass text-white font-bold rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
+            >
+              <MessageCircle size={18} />
+              Contactar WhatsApp
+            </a>
+          </div>
+          
           <a 
-            href="#pricing"
-            className="w-full sm:w-auto px-8 py-4 bg-white text-primary font-bold rounded-full flex items-center justify-center gap-2 hover:bg-accent hover:text-white transition-all group"
+            href="https://www.instagram.com/wavestudiov1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-white/40 hover:text-accent transition-colors text-sm font-medium"
           >
-            Ver planes
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a 
-            href="https://wa.me/51914135823?text=Hola%20buenas,%20queria%20mas%20informacion%20sobre%20las%20paginas%20web"
-            className="w-full sm:w-auto px-8 py-4 glass text-white font-bold rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
-          >
-            <MessageCircle size={18} />
-            Contactar WhatsApp
+            <Instagram size={16} />
+            Síguenos en Instagram @wavestudiov1
           </a>
         </motion.div>
       </div>
